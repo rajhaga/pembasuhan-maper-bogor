@@ -476,7 +476,7 @@ HTML_PAGE = """<!DOCTYPE html>
     <div class="filter-pill active" onclick="setFilter('all', this)">Semua Sesi (12)</div>
     <div class="filter-pill" onclick="setFilter('songs', this)">🎬 6 Video Lagu</div>
     <div class="filter-pill" onclick="setFilter('speeches', this)">🎙️ Naskah WL</div>
-    <div class="filter-pill" onclick="setFilter('scriptures', this)">📖 Ayat Alkitab</div>
+    <a href="/download-backup-verses" class="filter-pill" style="background:#6b21a8; color:#ffffff; border-color:#9333ea; text-decoration:none; font-weight:700;">📜 Backup Ayat (TXT)</a>
     <a href="/download-guide" class="filter-pill" style="background:#1d4ed8; color:#ffffff; border-color:#3b82f6; text-decoration:none; font-weight:700;">📘 Unduh Panduan Pengurus (PDF 6 Hal)</a>
     <a href="/download-pdf" class="filter-pill" style="background:#047857; color:#ffffff; border-color:#10b981; text-decoration:none; font-weight:700;">🎵 Unduh Lirik Lagu (PDF 3 Hal)</a>
   </div>
@@ -594,11 +594,6 @@ Banyak hal dalam hidup mungkin tidak kita pahami, tetapi satu hal yang pasti: la
 Dengarlah panggilan Bapa... Siapa di antara kita yang tidak pernah melakukan dosa? Kita semua pernah tersandung, pernah melanggar perintah Tuhan, dan pernah melukai orang lain. Tetapi bersyukurlah, Tuhan kita bukanlah Allah yang suka menghakimi, mempermalukan, atau mengungkit masa lalu kita! Di atas kayu salib Golgota, kasih dan darah-Nya telah tercurah untuk membasuh segala cela kita. Di hadapan salib, tidak ada dosa yang terlalu hitam yang tak sanggup diputihkan oleh anugerah-Nya. Jangan takut, jangan bersembunyi lagi... datanglah pada pelukan-Nya saat ini."</div>
       </div>
 
-      <div class="box scripture-box">
-        <div class="scripture-title">📖 Ayat Alkitab (TB LAI Terverifikasi)</div>
-        <div class="scripture-text"><strong>Yesaya 1:18</strong> — "Marilah, baiklah kita beperkara! — firman TUHAN — Sekalipun dosamu merah seperti kirmizi, akan menjadi putih seperti salju; sekalipun berwarna merah seperti kain kesumba, akan menjadi putih seperti bulu domba."</div>
-      </div>
-
       <button class="next-session-btn" onclick="scrollToSession(4)">
         <span>Siap Bernyanyi &rarr; Lanjut ke Lagu 2 (Sejauh Timur Dari Barat)</span>
       </button>
@@ -680,13 +675,7 @@ Rasakan nafas hidup yang masih Tuhan berikan. Tanggalkan segala topeng dan gengs
 
 [HENINGKAN HATI SELAMA 2 MENIT — HANYA ALUNAN AMBIENT BASE SONG]
 
-Tuhan berfirman dalam 1 Yohanes 1:9: <em>'Jika kita mengaku dosa kita, maka Ia adalah setia dan adil, sehingga Ia akan mengampuni segala dosa kita dan menyucikan kita dari segala kejahatan.'</em> Dan rancangan-Nya bukanlah rancangan kecelakaan, melainkan damai sejahtera untuk hari depan yang penuh harapan. Mari bawa seluruh bebanmu sujud di hadapan altar-Nya."</div>
-      </div>
-
-      <div class="box scripture-box">
-        <div class="scripture-title">📖 Ayat Alkitab (TB LAI Terverifikasi)</div>
-        <div class="scripture-text"><strong>1 Yohanes 1:9</strong> — "Jika kita mengaku dosa kita, maka Ia adalah setia dan adil, sehingga Ia akan mengampuni segala dosa kita dan menyucikan kita dari segala kejahatan."<br><br>
-<strong>Yeremia 29:11</strong> — "Sebab Aku ini mengetahui rancangan-rancangan apa yang ada pada-Ku mengenai kamu, demikianlah firman TUHAN, yaitu rancangan damai sejahtera dan bukan rancangan kecelakaan, untuk memberikan kepadamu hari depan yang penuh harapan."</div>
+Tuhan mengetahui setiap isi hatimu dan rancangan-Nya adalah damai sejahtera untuk memberikan hari depan yang penuh harapan. Mari bawa seluruh bebanmu sujud di hadapan altar-Nya."</div>
       </div>
 
       <button class="next-session-btn" onclick="scrollToSession(6)">
@@ -777,12 +766,6 @@ Raja segala raja itu berlutut di tanah berdebu, tepat di bawah telapak kaki muri
 Saat Petrus menolak karena merasa tidak layak, Yesus memandangnya dan berkata: <em>'Jikalau Aku tidak membasuh engkau, engkau tidak mendapat bagian dalam-Ku.'</em>
 
 Air yang ada di hadapan kita hari ini adalah simbol kerendahan hati dan kasih pemulihan Kristus. Kami pengurus dan kakak-abangmu di PERMATA Bogor bukanlah orang-orang yang tanpa cela. Kami pun orang berdosa yang telah ditebus oleh anugerah. Tetapi hari ini, dengan hati seorang hamba, kami rindu menanggalkan keangkuhan kami untuk melayani kalian. Kami rindu membasuh kakimu, sebagai tanda bahwa engkau diterima seutuhnya dalam pelukan persaudaraan PERMATA Bogor."</div>
-      </div>
-
-      <div class="box scripture-box">
-        <div class="scripture-title">📖 Detail Ayat Alkitab (TB LAI Terverifikasi)</div>
-        <div class="scripture-text"><strong>Yohanes 13:14-15</strong> — "Jadi jikalau Aku membasuh kakimu, Aku yang adalah Tuhan dan Guru, maka kamupun wajib saling membasuh kaki; sebab Aku telah memberikan suatu teladan kepada kamu, supaya kamu juga berbuat sama seperti yang telah Kuperbuat kepadamu."<br><br>
-<strong>Filipi 2:5,7</strong> — "Hendaklah kamu dalam hidupmu bersama, menaruh pikiran dan perasaan yang terdapat juga dalam Kristus Yesus... melainkan telah mengosongkan diri-Nya sendiri, dan mengambil rupa seorang hamba, dan menjadi sama dengan manusia."</div>
       </div>
 
       <button class="next-session-btn" onclick="scrollToSession(8)">
@@ -971,11 +954,6 @@ Yang tiada pernah berhenti</div>
 Selamat datang di rumah persekutuan PERMATA GBKP Runggun Bogor. Kamu berharga, kamu dikasihi, dan kita adalah satu keluarga di dalam Kristus."</div>
       </div>
 
-      <div class="box scripture-box">
-        <div class="scripture-title">📖 Doa Berkat Imamat (TB LAI Terverifikasi)</div>
-        <div class="scripture-text"><strong>Bilangan 6:24-26</strong> — "TUHAN memberkati engkau dan melindungi engkau; TUHAN menyinari engkau dengan wajah-Nya dan memberi engkau kasih karunia; TUHAN menghadapkan wajah-Nya kepadamu dan memberi engkau damai sejahtera."</div>
-      </div>
-
       <button class="next-session-btn" onclick="scrollToSession(12)">
         <span>Masuk Sukacita Penutup &rarr; Lanjut ke Lagu 6 (Hari Ini Kurasa Bahagia)</span>
       </button>
@@ -1040,10 +1018,9 @@ Kau sahabatku, kau saudaraku
 Tiada yang dapat memisahkan kita!</div>
       </div>
 
-      <div class="box scripture-box">
-        <div class="scripture-title">📖 Semboyan PERMATA GBKP</div>
-        <div class="scripture-text"><strong>Yosua 24:15c</strong> — "Tetapi aku dan seisi rumahku, kami akan beribadah kepada TUHAN!"<br><br>
-<em>"Ersada Arih Man Dibata, Si Sampat-sampaten Ibas Kekelengen &bull; Soli Deo Gloria!"</em></div>
+      <div class="box cue-box" style="border-left-color: #3b82f6; background: rgba(59, 130, 246, 0.08); color: #93c5fd;">
+        <div class="cue-title" style="color: #60a5fa;">🤝 Semboyan PERMATA GBKP</div>
+        <em>"Ersada Arih Man Dibata, Si Sampat-sampaten Ibas Kekelengen &bull; Soli Deo Gloria!"</em>
       </div>
     </div>
 
@@ -1291,6 +1268,13 @@ def download_pdf():
     if not os.path.exists(PDF_FILE):
         return "PDF not found", 404
     return send_file(PDF_FILE, as_attachment=True, download_name="Buku_Lirik_Lagu_Pembasuhan_MAPER_Bogor.pdf", mimetype="application/pdf")
+
+@app.route('/download-backup-verses')
+def download_backup_verses():
+    backup_path = os.path.join(AUDIO_DIR, "BACKUP_AYAT_ALKITAB_LITURGI.txt")
+    if not os.path.exists(backup_path):
+        return "Backup file not found", 404
+    return send_file(backup_path, as_attachment=True, download_name="BACKUP_AYAT_ALKITAB_LITURGI.txt", mimetype="text/plain; charset=utf-8")
 
 if __name__ == '__main__':
     port = 8080

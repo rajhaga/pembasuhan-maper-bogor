@@ -380,11 +380,6 @@ html_content = """<!DOCTYPE html>
       Banyak hal dalam hidup mungkin tidak kita pahami, tetapi satu hal yang pasti: langkah kaki kecil kita tidak pernah sedetik pun hilang dari pandangan kasih Tuhan. Namun mari kita jujur di hadapan Bapa yang Mahatahu&hellip; berapa sering kaki kita justru melangkah menjauhi-Nya? Berapa sering keegoisan, amarah terpendam, kesombongan, dan dosa mengotori kekudusan hidup kita? Kita merasa bersalah, merasa kotor, dan merasa tidak layak lagi datang kepada-Nya&hellip;"
     </div>
 
-    <div class="callout-pink">
-      <strong>Putri/Liturgis (Yesaya 1:18 - Terjemahan Baru LAI [Terverifikasi]):</strong><br>
-      "Marilah, baiklah kita beperkara! &ndash; firman TUHAN &ndash; Sekalipun dosamu merah seperti kirmizi, akan menjadi putih seperti salju; sekalipun berwarna merah seperti kain kesumba, akan menjadi putih seperti bulu domba."
-    </div>
-
     <div class="speaker-label">WL: Meneguhkan Pengampunan Allah yang Sempurna</div>
     <div class="speaker-text">
       "Dengarlah panggilan Bapa&hellip; Siapa di antara kita yang tidak pernah melakukan dosa? Kita semua pernah tersandung, pernah melanggar perintah Tuhan, dan pernah melukai orang lain. Tetapi bersyukurlah, Tuhan kita bukanlah Allah yang suka menghakimi, mempermalukan, atau mengungkit masa lalu kita! Di atas kayu salib Golgota, kasih dan darah-Nya telah tercurah untuk membasuh segala cela kita. Di hadapan salib, tidak ada dosa yang terlalu hitam yang tak sanggup diputihkan oleh anugerah-Nya. Jangan takut, jangan bersembunyi lagi&hellip; datanglah pada pelukan-Nya saat ini."
@@ -414,8 +409,7 @@ html_content = """<!DOCTYPE html>
 
     <div class="speaker-label">WL: Ajakan Meletakkan Tangan di Dada &amp; Keheningan Doa Pribadi</div>
     <div class="speaker-text">
-      "1 Yohanes 1:9 meneguhkan kita: <em>'Jika kita mengaku dosa kita, maka Ia adalah setia dan adil, sehingga Ia akan mengampuni segala dosa kita dan menyucikan kita dari segala kejahatan.'</em><br>
-      Saat ini, mari kita semua menundukkan kepala&hellip; <strong>Boleh perlahan letakkan tangan kananmu di dada sebelah kirimu.</strong> Rasakan detak jantungmu. Di balik dadamu yang berdetak ini, ada hati yang mungkin sedang sangat lelah, ada luka yang tak pernah kau ceritakan pada siapapun, ada penyesalan dan kesalahan masa lalu yang kau simpan sendiri. Rasakan nafas hidup yang masih Tuhan berikan. Tanggalkan segala topeng dan gengsimu, bicaralah kepada Tuhan dalam lubuk hatimu yang terdalam&hellip; Dia mendengarkan setiap detak hatimu."
+      "Saat ini, mari kita semua menundukkan kepala&hellip; <strong>Boleh perlahan letakkan tangan kananmu di dada sebelah kirimu.</strong> Rasakan detak jantungmu. Di balik dadamu yang berdetak ini, ada hati yang mungkin sedang sangat lelah, ada luka yang tak pernah kau ceritakan pada siapapun, ada penyesalan dan kesalahan masa lalu yang kau simpan sendiri. Rasakan nafas hidup yang masih Tuhan berikan. Tanggalkan segala topeng dan gengsimu, bicaralah kepada Tuhan dalam lubuk hatimu yang terdalam&hellip; Dia mendengarkan setiap detak hatimu."
     </div>
 
     <div class="dashed-box">
@@ -437,12 +431,6 @@ html_content = """<!DOCTYPE html>
     </div>
 
     <div class="section-bar">IRINGAN MUSIK (PENGANTAR MENDOAKAN BEBAN &amp; PERGUMULAN HIDUP)</div>
-
-    <div class="callout-pink">
-      <strong>Putri/Liturgis (Yeremia 29:11-12 &amp; Yakobus 5:16 - TB LAI [Terverifikasi]):</strong><br>
-      &bull; <em>"Sebab Aku ini mengetahui rancangan-rancangan apa yang ada pada-Ku mengenai kamu, demikianlah firman TUHAN, yaitu rancangan damai sejahtera dan bukan rancangan kecelakaan, untuk memberikan kepadamu hari depan yang penuh harapan. Dan apabila kamu berseru dan datang untuk berdoa kepada-Ku, maka Aku akan mendengarkan kamu."</em> (Yer. 29:11-12)<br>
-      &bull; <em>"Hendaklah kamu saling mengaku dosamu dan saling mendoakan, supaya kamu sembuh. Doa orang yang benar, bila dengan yakin didoakan, sangat besar kuasanya."</em> (Yak. 5:16)
-    </div>
 
     <div class="speaker-label">WL: Mengajak Saling Menguatkan dalam Pergumulan</div>
     <div class="speaker-text">
@@ -494,7 +482,7 @@ html_content = """<!DOCTYPE html>
       4. <strong>HIGHLIGHT SUARA AIR:</strong> Di hadapan peserta, air dituangkan perlahan dari kendi ke baskom dari ketinggian sedang. Suara gemericik aliran air (<em>sound of pouring water</em>) harus terdengar jernih dan meditatif memenuhi keheningan ruangan.
     </div>
 
-    <div class="speaker-label">WL: Narasi Teladan Yesus Membasuh Kaki (Yohanes 13:1-17)</div>
+    <div class="speaker-label">WL: Narasi Teladan Yesus Membasuh Kaki</div>
     <div class="speaker-text" style="font-style: italic; color: #475569; margin-bottom: 4px;">
       (Biarkan suara gemericik air mengalir terdengar selama 5-7 detik dalam keheningan total yang kudus&hellip;)
     </div>
@@ -502,12 +490,7 @@ html_content = """<!DOCTYPE html>
       "Dengarkanlah&hellip; suara gemericik air yang mengalir itu&hellip;<br>
       Dua ribu tahun yang lalu, di sebuah ruang atas di Yerusalem, sebelum kayu salib ditegakkan, Yesus &ndash; Tuhan semesta alam &ndash; melakukan hal yang meruntuhkan keangkuhan dunia. Dia melepaskan jubah kemuliaan-Nya. Dia mengambil sehelai kain lenan, mengikatkannya di pinggang-Nya, dan menuangkan air bersih ke dalam baskom.<br>
       Raja segala raja itu berlutut di tanah berdebu, tepat di bawah telapak kaki murid-murid-Nya. Kaki yang kotor oleh debu perjalanan, kaki yang lelah, kaki yang kerap kali salah melangkah. Yesus membasuh kaki mereka satu per satu dengan tangan penuh kasih, lalu menyekanya dengan kain lenan-Nya.<br>
-      Saat Petrus menolak karena merasa tidak layak, Yesus memandangnya dan berkata: <em>'Jikalau Aku tidak membasuh engkau, engkau tidak mendapat bagian dalam-Ku.'</em> (Yohanes 13:8)"
-    </div>
-
-    <div class="callout-pink">
-      <strong>Putri/Liturgis (Filipi 2:3, 5-7 - TB LAI [Terverifikasi]):</strong><br>
-      "Hendaklah dengan rendah hati yang seorang menganggap yang lain lebih utama dari pada dirinya sendiri&hellip; Hendaklah kamu dalam hidupmu bersama, menaruh pikiran dan perasaan yang terdapat juga dalam Kristus Yesus, yang walaupun dalam rupa Allah, tidak menganggap kesetaraan dengan Allah itu sebagai milik yang harus dipertahankan, melainkan telah mengosongkan diri-Nya sendiri, dan mengambil rupa seorang hamba, dan menjadi sama dengan manusia."
+      Saat Petrus menolak karena merasa tidak layak, Yesus memandangnya dan berkata: <em>'Jikalau Aku tidak membasuh engkau, engkau tidak mendapat bagian dalam-Ku.'</em>"
     </div>
 
     <div class="speaker-label">WL: Makna Pelayanan di PERMATA GBKP Bogor</div>
@@ -602,8 +585,7 @@ html_content = """<!DOCTYPE html>
 
     <div class="speaker-label">WL: Deklarasi Sukacita &amp; Sambutan Keluarga Baru PERMATA Bogor</div>
     <div class="speaker-text">
-      "Yosua pernah berkata dengan iman teguh: <em>'Tetapi aku dan seisi rumahku, kami akan beribadah kepada TUHAN!'</em> (Yosua 24:15). Kiranya ini pun menjadi meterai komitmen bagi setiap kita yang ada di ruangan ini!<br><br>
-      Bagi kita yang sudah dibasuh, hidup kita bukan lagi menjadi orang asing, tetapi hidup kita sudah berjalan bersama dengan yang benar yaitu Kristus Yesus! Yang lama sudah berlalu, sungguh yang baru sudah datang!<br><br>
+      "Bagi kita yang sudah dibasuh, hidup kita bukan lagi menjadi orang asing, tetapi hidup kita sudah berjalan bersama dengan yang benar yaitu Kristus Yesus! Yang lama sudah berlalu, sungguh yang baru sudah datang!<br><br>
       Marilah kita bersukacita dan bergembira bersama di PERMATA Bogor! Karena adik-adik kita, teman-teman kita semua sudah resmi bergabung ke dalam PERMATA Bogor dan menjadi keluarga baru kita! Mereka sekarang sudah bersama-sama dengan kita, mari kita bersenang-senang dan bersorak-sorai yang paling meriah bagi Tuhan Yesus!"
     </div>
 
@@ -629,11 +611,6 @@ html_content = """<!DOCTYPE html>
         Kau sahabatku, kau saudaraku, tiada yang dapat memisahkan kita<br>
         Kau sahabatku, kau saudaraku, tiada yang dapat memisahkan kita!
       </div>
-    </div>
-
-    <div class="callout-pink">
-      <strong>Doa Berkat &amp; Pengurapan (Bilangan 6:24-26 - TB LAI [Terverifikasi]):</strong><br>
-      <em>"TUHAN memberkati engkau dan melindungi engkau; TUHAN menyinari engkau dengan wajah-Nya dan memberi engkau kasih karunia; TUHAN menghadapkan wajah-Nya kepadamu dan memberi engkau damai sejahtera."</em>
     </div>
 
     <div class="callout-lavender">
