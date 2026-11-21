@@ -2,76 +2,80 @@
 """
 Script to generate the official Seating Plot PDF (A4 Landscape)
 for Pembasuhan Kaki MAPER PERMATA GBKP Runggun Bogor.
-Grid: 5 Baris x 6 Kolom (30 Kursi: 21 Perempuan di Kiri, 9 Laki-laki di Kanan).
+Grid: 6 Baris ke Belakang x 5 Kolom ke Samping (30 Kursi).
+Sisi Kiri: 3 Kolom (Perempuan) | Lorong Tengah | Sisi Kanan: 2 Kolom (Laki-Laki & Pasangan Pendoa).
 """
 
 import os
 from playwright.sync_api import sync_playwright
 
-# Data Grid 5x6
-# Rows 1 to 5, Columns 1 to 6
-grid_data = [
+# Data Grid 6 Baris x 5 Kolom
+# Rows 1 to 6, Columns 1 to 5
+grid_data_6x5 = [
     # Baris 1
     [
         {"seat": "B1-K1", "name": "Natasya Nizura Febina Br Sinulingga", "cd": False, "pendoa": "Barby Maretta", "gen": "P"},
         {"seat": "B1-K2", "name": "Renate Callysta Ginting", "cd": True, "pendoa": "Barby Maretta", "gen": "P"},
         {"seat": "B1-K3", "name": "Melvina Nathania Sembiring", "cd": True, "pendoa": "Barby Maretta", "gen": "P"},
-        {"seat": "B1-K4", "name": "Tiffany Christabel Br Perangin-angin", "cd": False, "pendoa": "Franz Surya Kembaren", "gen": "P"},
-        {"seat": "B1-K5", "name": "Kelvin Immanuel P", "cd": False, "pendoa": "Marshall Bangun", "gen": "L"},
-        {"seat": "B1-K6", "name": "Geraldo Oktovian Sinura", "cd": True, "pendoa": "Marshall Bangun", "gen": "L"},
+        {"seat": "B1-K4", "name": "Kelvin Immanuel P", "cd": False, "pendoa": "Marshall Bangun", "gen": "L"},
+        {"seat": "B1-K5", "name": "Geraldo Oktovian Sinura", "cd": True, "pendoa": "Marshall Bangun", "gen": "L"},
     ],
     # Baris 2
     [
         {"seat": "B2-K1", "name": "Irene Johanna Aginta Sitepu", "cd": True, "pendoa": "Febi Ginting", "gen": "P"},
         {"seat": "B2-K2", "name": "Elsa Natalita br Bangun", "cd": False, "pendoa": "Febi Ginting", "gen": "P"},
         {"seat": "B2-K3", "name": "Kimberly Angelina Kembaren", "cd": False, "pendoa": "Febi Ginting", "gen": "P"},
-        {"seat": "B2-K4", "name": "Cheesya Avira Aurelya Manik", "cd": True, "pendoa": "Franz Surya Kembaren", "gen": "P"},
-        {"seat": "B2-K5", "name": "Nathan Bastanta Ginting", "cd": True, "pendoa": "Daniel Tarigan", "gen": "L"},
-        {"seat": "B2-K6", "name": "Ryando Alwirasesa Rumbo Sitepu", "cd": False, "pendoa": "Daniel Tarigan", "gen": "L"},
+        {"seat": "B2-K4", "name": "Nathan Bastanta Ginting", "cd": True, "pendoa": "Daniel Tarigan", "gen": "L"},
+        {"seat": "B2-K5", "name": "Ryando Alwirasesa Rumbo Sitepu", "cd": False, "pendoa": "Daniel Tarigan", "gen": "L"},
     ],
     # Baris 3
     [
         {"seat": "B3-K1", "name": "Margaretta Br Sembiring Depari", "cd": False, "pendoa": "Lia PK", "gen": "P"},
         {"seat": "B3-K2", "name": "Elvira Faulita", "cd": False, "pendoa": "Lia PK", "gen": "P"},
         {"seat": "B3-K3", "name": "Jessica Lysia Br Tarigan", "cd": False, "pendoa": "Lia PK", "gen": "P"},
-        {"seat": "B3-K4", "name": "Allegra Luweenda Surbakti", "cd": False, "pendoa": "Winna Amelia Sembiring", "gen": "P"},
-        {"seat": "B3-K5", "name": "Hozael Jeremia Sembiring", "cd": False, "pendoa": "Paskal Jesaya Mori Sitepu", "gen": "L"},
-        {"seat": "B3-K6", "name": "Dave Berenta Pinem", "cd": False, "pendoa": "Paskal Jesaya Mori Sitepu", "gen": "L"},
+        {"seat": "B3-K4", "name": "Hozael Jeremia Sembiring", "cd": False, "pendoa": "Paskal Jesaya Mori Sitepu", "gen": "L"},
+        {"seat": "B3-K5", "name": "Dave Berenta Pinem", "cd": False, "pendoa": "Paskal Jesaya Mori Sitepu", "gen": "L"},
     ],
     # Baris 4
     [
         {"seat": "B4-K1", "name": "Chiara Fiorenza Nathania br Pandia", "cd": True, "pendoa": "Winda Meysara", "gen": "P"},
         {"seat": "B4-K2", "name": "Agustina br Ginting", "cd": False, "pendoa": "Winda Meysara", "gen": "P"},
         {"seat": "B4-K3", "name": "Bianca Noella Vemy Ulina Surbakti", "cd": False, "pendoa": "Winda Meysara", "gen": "P"},
-        {"seat": "B4-K4", "name": "Nicole Alvara Larasati Ginting", "cd": False, "pendoa": "Winna Amelia Sembiring", "gen": "P"},
-        {"seat": "B4-K5", "name": "Setenly Ekel Timanta Sembiring", "cd": False, "pendoa": "Evan PK", "gen": "L"},
-        {"seat": "B4-K6", "name": "Gideon Ginting", "cd": False, "pendoa": "Evan PK", "gen": "L"},
+        {"seat": "B4-K4", "name": "Setenly Ekel Timanta Sembiring", "cd": False, "pendoa": "Evan PK", "gen": "L"},
+        {"seat": "B4-K5", "name": "Gideon Ginting", "cd": False, "pendoa": "Evan PK", "gen": "L"},
     ],
     # Baris 5
     [
         {"seat": "B5-K1", "name": "Judith Serafica Bregina", "cd": True, "pendoa": "Sonya Tarigan", "gen": "P"},
         {"seat": "B5-K2", "name": "Voofea kembaren", "cd": False, "pendoa": "Sonya Tarigan", "gen": "P"},
         {"seat": "B5-K3", "name": "Meka Suriyangi Br Brahmana", "cd": False, "pendoa": "Sonya Tarigan", "gen": "P"},
-        {"seat": "B5-K4", "name": "Aurel Anastasya Sinulingga", "cd": False, "pendoa": "Winna Amelia Sembiring", "gen": "P"},
-        {"seat": "B5-K5", "name": "Agitta Ria br Tarigan", "cd": True, "pendoa": "Marvel banngun", "gen": "P"},
-        {"seat": "B5-K6", "name": "Bellian Casey Ginting", "cd": True, "pendoa": "Marvel banngun", "gen": "L"},
+        {"seat": "B5-K4", "name": "Tiffany Christabel Br Perangin-angin", "cd": False, "pendoa": "Franz Surya Kembaren", "gen": "P"},
+        {"seat": "B5-K5", "name": "Cheesya Avira Aurelya Manik", "cd": True, "pendoa": "Franz Surya Kembaren", "gen": "P"},
+    ],
+    # Baris 6
+    [
+        {"seat": "B6-K1", "name": "Allegra Luweenda Surbakti", "cd": False, "pendoa": "Winna Amelia Sembiring", "gen": "P"},
+        {"seat": "B6-K2", "name": "Nicole Alvara Larasati Ginting", "cd": False, "pendoa": "Winna Amelia Sembiring", "gen": "P"},
+        {"seat": "B6-K3", "name": "Aurel Anastasya Sinulingga", "cd": False, "pendoa": "Winna Amelia Sembiring", "gen": "P"},
+        {"seat": "B6-K4", "name": "Agitta Ria br Tarigan", "cd": True, "pendoa": "Marvel banngun", "gen": "P"},
+        {"seat": "B6-K5", "name": "Bellian Casey Ginting", "cd": True, "pendoa": "Marvel banngun", "gen": "L"},
     ],
 ]
 
-# Rekap Pendoa
+# Rekap Wilayah Tugas Pendoa (Satu Baris Penuh Bersama)
 pendoa_summary = [
-    {"pendoa": "Marshall Bangun", "role": "Pengurus", "target": "2 Pria", "seats": ["B1-K5 (Kelvin)", "B1-K6 (Geraldo [CD])"]},
-    {"pendoa": "Daniel Tarigan", "role": "Pengurus", "target": "2 Pria", "seats": ["B2-K5 (Nathan [CD])", "B2-K6 (Ryando)"]},
-    {"pendoa": "Paskal Jesaya Mori Sitepu", "role": "Pengurus", "target": "2 Pria", "seats": ["B3-K5 (Hozael)", "B3-K6 (Dave)"]},
-    {"pendoa": "Evan PK", "role": "Pengurus", "target": "2 Pria", "seats": ["B4-K5 (Setenly)", "B4-K6 (Gideon)"]},
-    {"pendoa": "Marvel banngun", "role": "Pengurus", "target": "1 Wanita + 1 Pria", "seats": ["B5-K5 (Agitta [CD])", "B5-K6 (Bellian [CD])"]},
-    {"pendoa": "Barby Maretta", "role": "Pengurus", "target": "3 Wanita", "seats": ["B1-K1 (Natasya)", "B1-K2 (Renate [CD])", "B1-K3 (Melvina [CD])"]},
-    {"pendoa": "Febi Ginting", "role": "Pengurus", "target": "3 Wanita", "seats": ["B2-K1 (Irene [CD])", "B2-K2 (Elsa)", "B2-K3 (Kimberly)"]},
-    {"pendoa": "Lia PK", "role": "Pengurus", "target": "3 Wanita", "seats": ["B3-K1 (Margaretta)", "B3-K2 (Elvira)", "B3-K3 (Jessica)"]},
-    {"pendoa": "Winda Meysara", "role": "Pengurus", "target": "3 Wanita", "seats": ["B4-K1 (Chiara [CD])", "B4-K2 (Agustina)", "B4-K3 (Bianca)"]},
-    {"pendoa": "Sonya Tarigan", "role": "Pengurus", "target": "3 Wanita", "seats": ["B5-K1 (Judith [CD])", "B5-K2 (Voofea)", "B5-K3 (Meka)"]},
-    {"pendoa": "Franz Surya Kembaren", "role": "Pengurus", "target": "2 Wanita", "seats": ["B1-K4 (Tiffany)", "B2-K4 (Cheesya [CD])"]},
-    {"pendoa": "Winna Amelia Sembiring", "role": "Pengurus", "target": "3 Wanita", "seats": ["B3-K4 (Allegra)", "B4-K4 (Nicole)", "B5-K4 (Aurel)"]},
+    {"pendoa": "Barby Maretta", "baris": "Baris 1 (Kiri)", "target": "3 Wanita", "seats": ["B1-K1 (Natasya)", "B1-K2 (Renate [CD])", "B1-K3 (Melvina [CD])"]},
+    {"pendoa": "Marshall Bangun", "baris": "Baris 1 (Kanan)", "target": "2 Pria", "seats": ["B1-K4 (Kelvin)", "B1-K5 (Geraldo [CD])"]},
+    {"pendoa": "Febi Ginting", "baris": "Baris 2 (Kiri)", "target": "3 Wanita", "seats": ["B2-K1 (Irene [CD])", "B2-K2 (Elsa)", "B2-K3 (Kimberly)"]},
+    {"pendoa": "Daniel Tarigan", "baris": "Baris 2 (Kanan)", "target": "2 Pria", "seats": ["B2-K4 (Nathan [CD])", "B2-K5 (Ryando)"]},
+    {"pendoa": "Lia PK", "baris": "Baris 3 (Kiri)", "target": "3 Wanita", "seats": ["B3-K1 (Margaretta)", "B3-K2 (Elvira)", "B3-K3 (Jessica)"]},
+    {"pendoa": "Paskal Jesaya Mori Sitepu", "baris": "Baris 3 (Kanan)", "target": "2 Pria", "seats": ["B3-K4 (Hozael)", "B3-K5 (Dave)"]},
+    {"pendoa": "Winda Meysara", "baris": "Baris 4 (Kiri)", "target": "3 Wanita", "seats": ["B4-K1 (Chiara [CD])", "B4-K2 (Agustina)", "B4-K3 (Bianca)"]},
+    {"pendoa": "Evan PK", "baris": "Baris 4 (Kanan)", "target": "2 Pria", "seats": ["B4-K4 (Setenly)", "B4-K5 (Gideon)"]},
+    {"pendoa": "Sonya Tarigan", "baris": "Baris 5 (Kiri)", "target": "3 Wanita", "seats": ["B5-K1 (Judith [CD])", "B5-K2 (Voofea)", "B5-K3 (Meka)"]},
+    {"pendoa": "Franz Surya Kembaren", "baris": "Baris 5 (Kanan)", "target": "2 Wanita", "seats": ["B5-K4 (Tiffany)", "B5-K5 (Cheesya [CD])"]},
+    {"pendoa": "Winna Amelia Sembiring", "baris": "Baris 6 (Kiri)", "target": "3 Wanita", "seats": ["B6-K1 (Allegra)", "B6-K2 (Nicole)", "B6-K3 (Aurel)"]},
+    {"pendoa": "Marvel banngun", "baris": "Baris 6 (Kanan)", "target": "1 Wanita + 1 Pria", "seats": ["B6-K4 (Agitta [CD])", "B6-K5 (Bellian [CD])"]},
 ]
 
 def render_html():
@@ -79,7 +83,7 @@ def render_html():
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <title>Denah & Plotting Tempat Duduk Pembasuhan MAPER</title>
+  <title>Denah & Plotting Tempat Duduk Pembasuhan MAPER (6 Baris x 5 Kolom)</title>
   <style>
     @page {{
       size: A4 landscape;
@@ -100,7 +104,7 @@ def render_html():
     .page {{
       width: 297mm;
       height: 210mm;
-      padding: 9mm 12mm 8mm 12mm;
+      padding: 7mm 11mm 6mm 11mm;
       position: relative;
       page-break-after: always;
       display: flex;
@@ -115,37 +119,37 @@ def render_html():
       justify-content: space-between;
       align-items: center;
       border-bottom: 2px solid #1e3a8a;
-      padding-bottom: 4px;
-      margin-bottom: 6px;
+      padding-bottom: 3px;
+      margin-bottom: 4px;
     }}
     .header-left .tag {{
-      font-size: 7.5pt;
+      font-size: 7pt;
       font-weight: 700;
       color: #2563eb;
       letter-spacing: 0.5px;
       text-transform: uppercase;
     }}
     .header-left .title {{
-      font-size: 13.5pt;
+      font-size: 13pt;
       font-weight: 800;
       color: #0f172a;
-      margin: 1px 0;
+      margin: 0;
       text-transform: uppercase;
       letter-spacing: -0.2px;
     }}
     .header-left .subtitle {{
-      font-size: 8pt;
+      font-size: 7.6pt;
       color: #475569;
-      font-weight: 500;
+      font-weight: 600;
     }}
     .header-badges {{
       display: flex;
-      gap: 6px;
+      gap: 5px;
     }}
     .h-badge {{
-      padding: 3px 8px;
+      padding: 2.5px 7px;
       border-radius: 4px;
-      font-size: 7.5pt;
+      font-size: 7.2pt;
       font-weight: 700;
     }}
     .h-badge-female {{
@@ -169,12 +173,12 @@ def render_html():
       background: linear-gradient(135deg, #1e3a8a, #0284c7);
       color: #ffffff;
       text-align: center;
-      padding: 4px 0;
-      font-size: 8.5pt;
+      padding: 3.5px 0;
+      font-size: 8pt;
       font-weight: 800;
       letter-spacing: 1.5px;
       border-radius: 4px;
-      margin-bottom: 6px;
+      margin-bottom: 4px;
       box-shadow: 0 1px 2px rgba(0,0,0,0.08);
     }}
 
@@ -182,12 +186,12 @@ def render_html():
     .grid-container {{
       display: flex;
       flex-direction: column;
-      gap: 4px;
+      gap: 3.5px;
       flex-grow: 1;
     }}
     .grid-row {{
       display: grid;
-      grid-template-columns: 32mm 1fr 1fr 1fr 1fr 6mm 1fr 1fr;
+      grid-template-columns: 26mm 1fr 1fr 1fr 8mm 1fr 1fr;
       gap: 4px;
       align-items: stretch;
     }}
@@ -201,12 +205,12 @@ def render_html():
       align-items: center;
       text-align: center;
       padding: 2px;
-      font-size: 7.2pt;
+      font-size: 6.8pt;
       font-weight: 700;
       color: #334155;
     }}
     .row-header-label strong {{
-      font-size: 8.5pt;
+      font-size: 8.2pt;
       color: #0f172a;
     }}
 
@@ -218,23 +222,24 @@ def render_html():
       text-orientation: mixed;
       font-size: 5.5pt;
       font-weight: 700;
-      letter-spacing: 1px;
-      color: #94a3b8;
+      letter-spacing: 1.5px;
+      color: #64748b;
       background: #f8fafc;
-      border-radius: 2px;
+      border: 1px dashed #cbd5e1;
+      border-radius: 3px;
     }}
 
     /* Seat Card */
     .seat-card {{
       border-radius: 4px;
-      padding: 4px 5px;
+      padding: 3px 5px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       border: 1.2px solid #cbd5e1;
       position: relative;
       background: #ffffff;
-      min-height: 24mm;
+      min-height: 20mm;
     }}
     .seat-card.female {{
       background: #fdf2f8;
@@ -249,10 +254,10 @@ def render_html():
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 2px;
+      margin-bottom: 1.5px;
     }}
     .seat-id {{
-      font-size: 6.8pt;
+      font-size: 6.6pt;
       font-weight: 800;
       color: #475569;
     }}
@@ -261,7 +266,7 @@ def render_html():
       gap: 3px;
     }}
     .badge-gen {{
-      font-size: 6pt;
+      font-size: 5.8pt;
       font-weight: 800;
       padding: 0.5px 3.5px;
       border-radius: 3px;
@@ -277,7 +282,7 @@ def render_html():
     .badge-cd {{
       background: #facc15;
       color: #713f12;
-      font-size: 6pt;
+      font-size: 5.8pt;
       font-weight: 800;
       padding: 0.5px 3.5px;
       border-radius: 3px;
@@ -285,11 +290,11 @@ def render_html():
     }}
 
     .participant-name {{
-      font-size: 7.6pt;
+      font-size: 7.3pt;
       font-weight: 800;
       color: #0f172a;
-      line-height: 1.2;
-      margin: 2px 0 3px 0;
+      line-height: 1.18;
+      margin: 1.5px 0 2px 0;
       word-break: break-word;
     }}
     .female .participant-name {{
@@ -300,11 +305,11 @@ def render_html():
     }}
 
     .pendoa-info {{
-      font-size: 6.7pt;
+      font-size: 6.4pt;
       color: #334155;
-      background: rgba(255, 255, 255, 0.7);
+      background: rgba(255, 255, 255, 0.75);
       border-radius: 3px;
-      padding: 1.5px 3px;
+      padding: 1px 3px;
       border: 1px dotted #cbd5e1;
       margin-top: auto;
       line-height: 1.15;
@@ -316,7 +321,7 @@ def render_html():
     /* Column Headers at top */
     .col-header-row {{
       display: grid;
-      grid-template-columns: 32mm 1fr 1fr 1fr 1fr 6mm 1fr 1fr;
+      grid-template-columns: 26mm 1fr 1fr 1fr 8mm 1fr 1fr;
       gap: 4px;
       margin-bottom: 2px;
       text-align: center;
@@ -344,10 +349,10 @@ def render_html():
       justify-content: space-between;
       align-items: center;
       border-top: 1px solid #cbd5e1;
-      padding-top: 3px;
-      font-size: 6.8pt;
+      padding-top: 2.5px;
+      font-size: 6.6pt;
       color: #64748b;
-      margin-top: 4px;
+      margin-top: 3px;
     }}
 
     /* Page 2 Styles (Directory Table) */
@@ -358,29 +363,29 @@ def render_html():
       flex-grow: 1;
     }}
     .sub-table-title {{
-      font-size: 8.5pt;
+      font-size: 8.2pt;
       font-weight: 800;
       color: #1e3a8a;
       text-transform: uppercase;
-      margin: 0 0 4px 0;
+      margin: 0 0 3.5px 0;
       border-bottom: 1.5px solid #1e3a8a;
       padding-bottom: 2px;
     }}
     table.data-table {{
       width: 100%;
       border-collapse: collapse;
-      font-size: 6.6pt;
+      font-size: 6.5pt;
     }}
     table.data-table th {{
       background: #1e3a8a;
       color: #ffffff;
-      padding: 3px 4px;
+      padding: 2.5px 4px;
       text-align: left;
       font-weight: 700;
-      font-size: 6.5pt;
+      font-size: 6.4pt;
     }}
     table.data-table td {{
-      padding: 2.2px 4px;
+      padding: 2px 4px;
       border-bottom: 1px solid #e2e8f0;
       color: #1e293b;
     }}
@@ -396,26 +401,26 @@ def render_html():
       font-weight: 800;
       padding: 0 3px;
       border-radius: 2px;
-      font-size: 6pt;
+      font-size: 5.8pt;
     }}
 
     .card-rekap {{
       background: #f8fafc;
       border: 1px solid #cbd5e1;
       border-radius: 4px;
-      padding: 4px 7px;
-      margin-bottom: 4px;
+      padding: 3.5px 6.5px;
+      margin-bottom: 3.5px;
     }}
     .card-rekap-title {{
-      font-size: 7.2pt;
+      font-size: 7pt;
       font-weight: 800;
       color: #0f172a;
       display: flex;
       justify-content: space-between;
-      margin-bottom: 2px;
+      margin-bottom: 1.5px;
     }}
     .card-rekap-body {{
-      font-size: 6.6pt;
+      font-size: 6.4pt;
       color: #334155;
       line-height: 1.25;
     }}
@@ -423,13 +428,13 @@ def render_html():
 </head>
 <body>
 
-  <!-- ==================== HALAMAN 1: DENAH VISUAL 5 X 6 ==================== -->
+  <!-- ==================== HALAMAN 1: DENAH VISUAL 6 BARIS X 5 KOLOM ==================== -->
   <div class="page">
     <div class="header-bar">
       <div class="header-left">
         <div class="tag">PERMATA GBKP RUNGGUN BOGOR &bull; MAPER 2026</div>
         <div class="title">DENAH &amp; PLOTTING TEMPAT DUDUK PEMBASUHAN KAKI</div>
-        <div class="subtitle">Grid Ruangan 5 Baris &times; 6 Kolom &bull; Total 30 Peserta (21 Perempuan &bull; 9 Laki-Laki)</div>
+        <div class="subtitle">Grid Ruangan 6 Baris &times; 5 Kolom &bull; Total 30 Peserta (21 Perempuan &bull; 9 Laki-Laki)</div>
       </div>
       <div class="header-badges">
         <span class="h-badge h-badge-female">&female; KIRI: PEREMPUAN (21)</span>
@@ -449,33 +454,33 @@ def render_html():
       <div class="col-header-box female-header">KOLOM 1 (P)</div>
       <div class="col-header-box female-header">KOLOM 2 (P)</div>
       <div class="col-header-box female-header">KOLOM 3 (P)</div>
-      <div class="col-header-box female-header">KOLOM 4 (P)</div>
       <div class="col-header-box" style="background:transparent; color:#94a3b8;">&bull;</div>
-      <div class="col-header-box male-header">KOLOM 5 (L/P)</div>
-      <div class="col-header-box male-header">KOLOM 6 (L)</div>
+      <div class="col-header-box male-header">KOLOM 4 (L/P)</div>
+      <div class="col-header-box male-header">KOLOM 5 (L)</div>
     </div>
 
-    <!-- 5 ROWS GRID -->
+    <!-- 6 ROWS GRID -->
     <div class="grid-container">
 """
 
     row_names = [
-        "BARIS 1<br><span style='font-size:6pt; font-weight:normal; color:#64748b;'>Terdepan / Dekat Altar</span>",
-        "BARIS 2<br><span style='font-size:6pt; font-weight:normal; color:#64748b;'>Baris Kedua</span>",
-        "BARIS 3<br><span style='font-size:6pt; font-weight:normal; color:#64748b;'>Baris Tengah</span>",
-        "BARIS 4<br><span style='font-size:6pt; font-weight:normal; color:#64748b;'>Baris Keempat</span>",
-        "BARIS 5<br><span style='font-size:6pt; font-weight:normal; color:#64748b;'>Paling Belakang</span>",
+        "BARIS 1<br><span style='font-size:5.5pt; font-weight:normal; color:#64748b;'>Terdepan</span>",
+        "BARIS 2<br><span style='font-size:5.5pt; font-weight:normal; color:#64748b;'>Baris Kedua</span>",
+        "BARIS 3<br><span style='font-size:5.5pt; font-weight:normal; color:#64748b;'>Baris Ketiga</span>",
+        "BARIS 4<br><span style='font-size:5.5pt; font-weight:normal; color:#64748b;'>Baris Keempat</span>",
+        "BARIS 5<br><span style='font-size:5.5pt; font-weight:normal; color:#64748b;'>Baris Kelima</span>",
+        "BARIS 6<br><span style='font-size:5.5pt; font-weight:normal; color:#64748b;'>Paling Belakang</span>",
     ]
 
-    for r_idx, row in enumerate(grid_data):
+    for r_idx, row in enumerate(grid_data_6x5):
         html += f"""
       <div class="grid-row">
         <div class="row-header-label">
           <strong>{row_names[r_idx]}</strong>
         </div>
 """
-        # Kolom 1 to 4 (Wanita)
-        for c in range(4):
+        # Kolom 1 to 3 (Sisi Kiri: 3 Kursi Perempuan)
+        for c in range(3):
             item = row[c]
             gen_class = "female" if item["gen"] == "P" else "male"
             gen_label = "P" if item["gen"] == "P" else "L"
@@ -497,8 +502,8 @@ def render_html():
         html += """
         <div class="aisle-divider">LORONG</div>
 """
-        # Kolom 5 & 6 (Laki-laki / Agitta di Kolom 5 Baris 5)
-        for c in range(4, 6):
+        # Kolom 4 & 5 (Sisi Kanan: 2 Kursi Pria / Pendoa)
+        for c in range(3, 5):
             item = row[c]
             gen_class = "female" if item["gen"] == "P" else "male"
             gen_label = "P" if item["gen"] == "P" else "L"
@@ -535,7 +540,7 @@ def render_html():
       <div class="header-left">
         <div class="tag">PERMATA GBKP RUNGGUN BOGOR &bull; PANDUAN PENGURUS &amp; USHER</div>
         <div class="title">TABEL DIREKTORI LENGKAP PESERTA &amp; REKAP WILAYAH PENDOA</div>
-        <div class="subtitle">Daftar Urut Posisi Kursi, Gender, Keterangan CD, dan Penanggung Jawab Pendoa / Pembasuh</div>
+        <div class="subtitle">Layout 6 Baris &times; 5 Kolom &bull; Adik Bimbingan Duduk Berdampingan di Baris yang Sama</div>
       </div>
       <div class="header-badges">
         <span class="h-badge h-badge-female">21 Perempuan</span>
@@ -547,7 +552,7 @@ def render_html():
     <div class="table-section">
       <!-- Kolom Kiri: Tabel 30 Peserta -->
       <div>
-        <div class="sub-table-title">Daftar 30 Peserta Menurut Posisi Kursi</div>
+        <div class="sub-table-title">Daftar 30 Peserta Menurut Posisi Kursi (6 Baris x 5 Kolom)</div>
         <table class="data-table">
           <thead>
             <tr>
@@ -563,7 +568,7 @@ def render_html():
 """
 
     count = 1
-    for r in grid_data:
+    for r in grid_data_6x5:
         for item in r:
             row_highlight = 'class="highlight-pria"' if item["gen"] == "L" else ''
             cd_badge = '<span class="badge-cd-sm">CD</span>' if item["cd"] else '-'
@@ -595,7 +600,7 @@ def render_html():
         <div class="card-rekap">
           <div class="card-rekap-title">
             <span>👤 {p['pendoa']}</span>
-            <span style="color:#2563eb; font-weight:700;">{p['target']}</span>
+            <span style="color:#2563eb; font-weight:700;">{p['baris']} &bull; {p['target']}</span>
           </div>
           <div class="card-rekap-body">
             <strong>Posisi Duduk Adik:</strong><br>{seats_str}
@@ -604,9 +609,9 @@ def render_html():
 """
 
     html += """
-        <div style="background:#fef9c3; border-left:3px solid #eab308; padding:5px 7px; border-radius:3px; font-size:6.6pt; color:#713f12; margin-top:6px; line-height:1.3;">
-          💡 <strong>Petunjuk Khusus Tim Pendoa:</strong><br>
-          Semua peserta yang didoakan oleh kakak-abang yang sama duduk <strong>berdampingan langsung</strong> (di baris atau kolom yang sama). Pada saat sesi basuh kaki, kakak-abang cukup berdiri/berlutut tepat di depan barisan adik-adiknya tanpa perlu berpindah-pindah tempat.
+        <div style="background:#fef9c3; border-left:3px solid #eab308; padding:4px 7px; border-radius:3px; font-size:6.4pt; color:#713f12; margin-top:5px; line-height:1.25;">
+          💡 <strong>Petunjuk Khusus Tim Pendoa (Layout 6x5):</strong><br>
+          Semua peserta yang didoakan oleh pendoa yang sama duduk <strong>100% berdampingan dalam satu baris yang sama</strong>. Pendoa cukup melayani langsung di barisannya tanpa perlu berpindah-pindah baris.
         </div>
       </div>
     </div>

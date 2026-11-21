@@ -838,7 +838,7 @@ Itu milik-Mu oh...</div>
 
       <div class="box cue-box">
         <div class="cue-title">💡 Petunjuk Operator, Posisi Duduk &amp; Pengurus</div>
-        • <strong>Posisi Duduk:</strong> Adik-adik yang akan dibasuh kakinya dipersilakan duduk dengan tenang di kursi pembasuhan sesuai <a href="/download-seating-pdf" style="color: #60a5fa; font-weight: bold; text-decoration: underline;" target="_blank">Denah Duduk 5x6 (PDF)</a> (Kiri: 21 Perempuan, Kanan: 9 Laki-laki).<br>
+        • <strong>Posisi Duduk:</strong> Adik-adik yang akan dibasuh kakinya dipersilakan duduk dengan tenang di kursi pembasuhan sesuai <a href="/download-seating-pdf" style="color: #60a5fa; font-weight: bold; text-decoration: underline;" target="_blank">Denah Duduk 6x5 (PDF)</a> (Kiri: 18 Perempuan, Kanan: 9 Laki-laki + 3 Perempuan).<br>
         • <strong>Pengurus:</strong> Seluruh pengurus PERMATA dan kakak-abang mengambil posisi berada di depan adik-adik/teman-teman PERMATA.<br>
         • <strong>Musik:</strong> Base Song mengalir lembut mengiringi ajakan berlutut melayani.
       </div>
