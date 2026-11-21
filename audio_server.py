@@ -476,9 +476,10 @@ HTML_PAGE = """<!DOCTYPE html>
     <div class="filter-pill active" onclick="setFilter('all', this)">Semua Sesi (12)</div>
     <div class="filter-pill" onclick="setFilter('songs', this)">🎬 6 Video Lagu</div>
     <div class="filter-pill" onclick="setFilter('speeches', this)">🎙️ Naskah WL</div>
-    <a href="/download-backup-verses" class="filter-pill" style="background:#6b21a8; color:#ffffff; border-color:#9333ea; text-decoration:none; font-weight:700;">📜 Backup Ayat (TXT)</a>
+    <a href="/download-seating-pdf" class="filter-pill" style="background:#c2410c; color:#ffffff; border-color:#ea580c; text-decoration:none; font-weight:700;">🪑 Unduh Denah Duduk (PDF)</a>
     <a href="/download-guide" class="filter-pill" style="background:#1d4ed8; color:#ffffff; border-color:#3b82f6; text-decoration:none; font-weight:700;">📘 Unduh Panduan Pengurus (PDF 6 Hal)</a>
     <a href="/download-pdf" class="filter-pill" style="background:#047857; color:#ffffff; border-color:#10b981; text-decoration:none; font-weight:700;">🎵 Unduh Lirik Lagu (PDF 3 Hal)</a>
+    <a href="/download-backup-verses" class="filter-pill" style="background:#6b21a8; color:#ffffff; border-color:#9333ea; text-decoration:none; font-weight:700;">📜 Backup Ayat (TXT)</a>
   </div>
 
   <!-- Rundown Container -->
@@ -837,7 +838,7 @@ Itu milik-Mu oh...</div>
 
       <div class="box cue-box">
         <div class="cue-title">💡 Petunjuk Operator, Posisi Duduk &amp; Pengurus</div>
-        • <strong>Posisi Duduk:</strong> Adik-adik yang akan dibasuh kakinya dipersilakan duduk dengan tenang di kursi pembasuhan.<br>
+        • <strong>Posisi Duduk:</strong> Adik-adik yang akan dibasuh kakinya dipersilakan duduk dengan tenang di kursi pembasuhan sesuai <a href="/download-seating-pdf" style="color: #60a5fa; font-weight: bold; text-decoration: underline;" target="_blank">Denah Duduk 5x6 (PDF)</a> (Kiri: 21 Perempuan, Kanan: 9 Laki-laki).<br>
         • <strong>Pengurus:</strong> Seluruh pengurus PERMATA dan kakak-abang mengambil posisi berada di depan adik-adik/teman-teman PERMATA.<br>
         • <strong>Musik:</strong> Base Song mengalir lembut mengiringi ajakan berlutut melayani.
       </div>
@@ -1275,6 +1276,13 @@ def download_backup_verses():
     if not os.path.exists(backup_path):
         return "Backup file not found", 404
     return send_file(backup_path, as_attachment=True, download_name="BACKUP_AYAT_ALKITAB_LITURGI.txt", mimetype="text/plain; charset=utf-8")
+
+@app.route('/download-seating-pdf')
+def download_seating_pdf():
+    seating_path = os.path.join(AUDIO_DIR, "Ploting_Tempat_Duduk_Pembasuhan_MAPER_Bogor.pdf")
+    if not os.path.exists(seating_path):
+        return "Seating PDF not found", 404
+    return send_file(seating_path, as_attachment=True, download_name="Ploting_Tempat_Duduk_Pembasuhan_MAPER_Bogor.pdf", mimetype="application/pdf")
 
 if __name__ == '__main__':
     port = 8080
