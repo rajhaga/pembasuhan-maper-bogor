@@ -753,14 +753,14 @@ Saat datang di altar-Nya!</div>
         <div class="cue-title">💡 HIGHLIGHT UTAMA: SOUND OF WATER &amp; LIGHTING</div>
         • <strong>Lighting:</strong> Lampu ruangan diredupkan perlahan (warm ambient). Sorotan lembut tertuju ke kendi &amp; salib.<br>
         • <strong>Prosesi:</strong> Pengurus berjalan khidmat membawa kendi air bersih, baskom, dan handuk putih.<br>
-        • <strong>SUARA AIR (5-7 Detik):</strong> Air dituangkan perlahan dari kendi ke baskom. Suara gemericik air meditatif memenuhi ruangan.
+        • <strong>PROSESI AIR (5-7 Detik):</strong> Air dituangkan perlahan dari kendi ke baskom. Seluruh ruangan hening menyaksikan air pembasuhan.
       </div>
 
       <div class="box speech-box">
         <div class="speech-title">🎙️ Kata-Kata yang Dikeluarkan WL (Naskah Lengkap)</div>
-        <div class="speech-text">(Biarkan suara gemericik air terdengar 5-7 detik dalam keheningan total...)
+        <div class="speech-text">(Biarkan keheningan total 5-7 detik saat air dituangkan...)
 
-"Dengarkanlah... suara gemericik air yang mengalir itu...
+"Lihatlah air di depanmu...
 Dua ribu tahun yang lalu, di sebuah ruang atas di Yerusalem, sebelum kayu salib ditegakkan, Yesus – Tuhan semesta alam – melakukan hal yang meruntuhkan keangkuhan dunia. Dia melepaskan jubah kemuliaan-Nya. Dia mengambil sehelai kain lenan, mengikatkannya di pinggang-Nya, dan menuangkan air bersih ke dalam baskom.
 Raja segala raja itu berlutut di tanah berdebu, tepat di bawah telapak kaki murid-murid-Nya. Kaki yang kotor oleh debu perjalanan, kaki yang lelah, kaki yang kerap kali salah melangkah. Yesus membasuh kaki mereka satu per satu dengan tangan penuh kasih, lalu menyekanya dengan kain lenan-Nya.
 Saat Petrus menolak karena merasa tidak layak, Yesus memandangnya dan berkata: <em>'Jikalau Aku tidak membasuh engkau, engkau tidak mendapat bagian dalam-Ku.'</em>
@@ -846,7 +846,7 @@ Itu milik-Mu oh...</div>
         <div class="speech-title">🎙️ Kata-Kata yang Dikeluarkan WL (Ajakan Pembasuhan &amp; Penyambutan Kasih)</div>
         <div class="speech-text">"Teman-teman sekalian, pembasuhan ini merupakan salah satu teladan yang dilakukan oleh Tuhan kita Yesus Kristus kepada para murid yang terkasih...
 
-Di sini, kami pengurus PERMATA — kami segenap keluarga PERMATA — akan melakukan pembasuhan kaki dari tiap-tiap di antara kamu, sebagai bentuk kami menyambut rasa kasih yang begitu besar dan juga menjalin persahabatan yang erat di dalam wadah PERMATA Bogor.
+Di sini, kami pengurus PERMATA — kami segenap keluarga PERMATA — akan melakukan pembasuhan kaki dari tiap-tiap di antara kamu, sebagai bentuk kami menyambut rasa kasih yang begitu besar dan juga menjalin persahabatan yang erat di dalam PERMATA.
 
 Kiranya teman-teman yang nantinya dibasuh kakinya akan terus berdiri teguh bersama dengan Tuhan, dan berdiri bersama kami. Mari sama-sama kita mengalami pemulihan sejati dari Tuhan. Semoga dengan apa yang sudah teman-teman doakan tadi sebelumnya, dan juga lewat pembasuhan kaki ini, kita bisa merasakan betapa teramat besarnya kasih Tuhan terhadap kita, bagaimana Dia mengampuni dan menerima kita apa adanya.
 

@@ -479,15 +479,15 @@ html_content = """<!DOCTYPE html>
       1. <strong>Lighting:</strong> Lampu ruangan diredupkan perlahan (<em>warm ambient</em>). Sorotan lembut tertuju ke arah kendi dan salib.<br>
       2. <strong>Musik:</strong> Vokal berhenti total. Keyboard hanya menahan satu nada pad lembut yang mengambang teduh.<br>
       3. <strong>Prosesi:</strong> Dua orang pengurus berjalan perlahan dan khidmat membawa kendi air bersih, baskom pembasuhan, dan handuk putih.<br>
-      4. <strong>HIGHLIGHT SUARA AIR:</strong> Di hadapan peserta, air dituangkan perlahan dari kendi ke baskom dari ketinggian sedang. Suara gemericik aliran air (<em>sound of pouring water</em>) harus terdengar jernih dan meditatif memenuhi keheningan ruangan.
+      4. <strong>PROSESI AIR:</strong> Di hadapan peserta, air dituangkan perlahan dari kendi ke baskom. Peserta diajak melihat air di hadapan mereka dalam keheningan yang khidmat.
     </div>
 
     <div class="speaker-label">WL: Narasi Teladan Yesus Membasuh Kaki</div>
     <div class="speaker-text" style="font-style: italic; color: #475569; margin-bottom: 4px;">
-      (Biarkan suara gemericik air mengalir terdengar selama 5-7 detik dalam keheningan total yang kudus&hellip;)
+      (Biarkan keheningan total selama 5-7 detik saat air dituangkan di hadapan peserta&hellip;)
     </div>
     <div class="speaker-text">
-      "Dengarkanlah&hellip; suara gemericik air yang mengalir itu&hellip;<br>
+      "Lihatlah air di depanmu&hellip;<br>
       Dua ribu tahun yang lalu, di sebuah ruang atas di Yerusalem, sebelum kayu salib ditegakkan, Yesus &ndash; Tuhan semesta alam &ndash; melakukan hal yang meruntuhkan keangkuhan dunia. Dia melepaskan jubah kemuliaan-Nya. Dia mengambil sehelai kain lenan, mengikatkannya di pinggang-Nya, dan menuangkan air bersih ke dalam baskom.<br>
       Raja segala raja itu berlutut di tanah berdebu, tepat di bawah telapak kaki murid-murid-Nya. Kaki yang kotor oleh debu perjalanan, kaki yang lelah, kaki yang kerap kali salah melangkah. Yesus membasuh kaki mereka satu per satu dengan tangan penuh kasih, lalu menyekanya dengan kain lenan-Nya.<br>
       Saat Petrus menolak karena merasa tidak layak, Yesus memandangnya dan berkata: <em>'Jikalau Aku tidak membasuh engkau, engkau tidak mendapat bagian dalam-Ku.'</em>"
@@ -530,7 +530,7 @@ html_content = """<!DOCTYPE html>
 
     <div class="speaker-label">WL: Naskah Penyambutan Kasih, Persahabatan &amp; Ajakan Basuh Kaki</div>
     <div class="speaker-text">
-      "Teman-teman sekalian, pembasuhan ini merupakan salah satu teladan yang dilakukan oleh Tuhan kita Yesus Kristus kepada para murid yang terkasih. Di sini kami pengurus PERMATA &ndash; segenap keluarga PERMATA &ndash; akan melakukan pembasuhan kaki dari tiap-tiap di antara kamu, sebagai bentuk kami menyambut rasa kasih yang begitu besar dan menjalin persahabatan yang erat di dalam PERMATA Bogor. Agar teman-teman yang nantinya dibasuh kakinya akan terus berdiri bersama dengan Tuhan, berdiri bersama kami, dan mari sama-sama kita mengalami pemulihan dari Tuhan. Semoga apa yang sudah teman-teman doakan tadi dan lewat pembasuhan kaki ini, kita merasakan betapa besarnya kasih Tuhan bagaimana Dia mengampuni kita. Oleh sebab itu, mari adik-adik kami yang akan dibasuh kakinya untuk bisa duduk, dan seluruh setiap dari pengurus PERMATA untuk berada di depan adik-adik atau teman-teman PERMATA lainnya."
+      "Teman-teman sekalian, pembasuhan ini merupakan salah satu teladan yang dilakukan oleh Tuhan kita Yesus Kristus kepada para murid yang terkasih. Di sini kami pengurus PERMATA &ndash; segenap keluarga PERMATA &ndash; akan melakukan pembasuhan kaki dari tiap-tiap di antara kamu, sebagai bentuk kami menyambut rasa kasih yang begitu besar dan menjalin persahabatan yang erat di dalam PERMATA. Agar teman-teman yang nantinya dibasuh kakinya akan terus berdiri bersama dengan Tuhan, berdiri bersama kami, dan mari sama-sama kita mengalami pemulihan dari Tuhan. Semoga apa yang sudah teman-teman doakan tadi dan lewat pembasuhan kaki ini, kita merasakan betapa besarnya kasih Tuhan bagaimana Dia mengampuni kita. Oleh sebab itu, mari adik-adik kami yang akan dibasuh kakinya untuk bisa duduk, dan seluruh setiap dari pengurus PERMATA untuk berada di depan adik-adik atau teman-teman PERMATA lainnya."
     </div>
 
     <div class="speaker-label">WL: Doa Syukur di Awal Sesi Basuh (Iringan Musik)</div>
@@ -616,7 +616,7 @@ html_content = """<!DOCTYPE html>
     <div class="callout-lavender">
       <strong>CHECKLIST OPERASIONAL TIM ACARA &amp; FASILITATOR (PERMATA BOGOR):</strong><br>
       &bull; <strong>Tim Air &amp; Perlengkapan:</strong> Pastikan air dalam kendi bersuhu nyaman (hangat kuku bila ruangan dingin), siapkan handuk bersih kering (1 handuk untuk 2-3 peserta), dan kain pel microfiber untuk lantai.<br>
-      &bull; <strong>Operator Multimedia &amp; Sound:</strong> Koordinasikan redupnya lampu saat prosesi kendi air masuk, serta pastikan sensitivitas mic menangkap efek gemericik air saat dituangkan ke baskom secara meditatif.<br>
+      &bull; <strong>Operator Multimedia &amp; Sound:</strong> Koordinasikan redupnya lampu saat prosesi kendi air masuk dan dituangkan ke baskom di hadapan peserta secara khidmat.<br>
       &bull; <strong>Tim Fasilitator (Kakak-Abang):</strong> Peka terhadap reaksi batin peserta. Dampingi dengan hangat, siapkan tisu bila ada peserta yang menangis haru, dan jangan meninggalkan peserta sendirian.
     </div>
 
