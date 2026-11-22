@@ -326,22 +326,23 @@ html_content = """<!DOCTYPE html>
       <strong>Tusar (Tujuan Sasaran):</strong> Peserta dapat merasakan damai sejahtera lewat penyembahan yang mendalam sehingga sesi ini menjadi media reflektif untuk menyadari betapa pentingnya Tuhan dalam hidupnya, mengalami kasih dan kerendahan hati Kristus lewat pembasuhan kaki oleh pengurus/kakak-abang, serta tergerak untuk menyerahkan diri dan aktif bersama keluarga PERMATA GBKP Bogor.
     </div>
 
-    <div class="section-bar">IRINGAN MUSIK (INTRO LEMBUT &ndash; BASE SONG AMBIENT DO = D)</div>
+    <div class="section-bar">SESI 1: PEMBUKAAN, KEHENINGAN &amp; MENYIAPKAN HATI (00:00 - 06:00 &bull; BASE SONG AMBIENT DO = D)</div>
 
-    <div class="speaker-label">WL: Pengantar Santai &amp; Menyiapkan Hati Masuk Hadirat Tuhan</div>
+    <div class="speaker-label">WL: Sapaan Hangat, Menata Fisik &amp; Mengajak Hening Bersama Masuk Hadirat Tuhan</div>
     <div class="speaker-text">
-      "Syalom PERMATA! Gimana makannya hari ini? Enak ya?<br>
-      Yuk, sekarang kita ambil posisi duduk yang paling santai dan paling nyaman&hellip; Letakkan tas di samping, dan simpan dulu handphone atau gadget kita masing-masing.<br>
-      Mari sejenak kita semua diam&hellip; Tarik napas panjang, tenangkan pikiran dari segala keramaian dan kesibukan di luar sana. Di sini, kita tidak perlu berpura-pura tegar atau memakai topeng. Biarkan hati kita benar-benar hening di hadapan Tuhan."
+      "Syalom teman-teman, adik-adik dan rekan-rekan PERMATA semuanya... Gimana makannya tadi? Enak dan mengenyangkan ya? Puji Tuhan.<br>
+      Yuk, sekarang kita ambil posisi duduk yang paling santai, paling nyaman, dan paling rileks&hellip; Letakkan tas di samping atau di bawah kursi masing-masing. Dan untuk sejenak saja, mari kita simpan handphone atau gadget kita... kita silent dulu, kita taruh di dalam tas. Biarkan dunia luar menunggu sejenak. Malam ini adalah waktu khusus antara kita, keluarga PERMATA kita, dan Tuhan.<br>
+      Mari bersama-sama kita pejamkan mata sejenak&hellip; Tarik napas panjang dari hidung&hellip; tahan sejenak&hellip; dan hembuskan perlahan dari mulut&hellip; <em>(Hening sejenak diiringi alunan piano lembut...)</em> Tenangkan detak jantung dan pikiran kita dari segala kebisingan dan kesibukan di luar sana. Mungkin beberapa waktu ini kepala dan hati kita terasa begitu penuh&mdash;tugas kampus, urusan sekolah, pekerjaan, persoalan keluarga, atau kekhawatiran masa depan yang membuat kita letih lahir dan batin.<br>
+      Di tempat ini, di hadapan Tuhan, kita tidak perlu lagi berpura-pura kuat atau memakai topeng. Di hadirat-Nya, kita boleh menjadi diri kita apa adanya. Tuhan mengenal setiap tetes air mata yang tersembunyi dan setiap pergumulan yang tak terucap. Di hadapan-Nya, kita aman dan dikasihi seutuhnya."
     </div>
 
     <div class="callout-yellow">
-      <strong>Kakak abang yg bertugas:</strong> Silakan perlahan mendekat, duduk di samping adik-adiknya, rangkul pundak mereka dengan kehangatan kasih persaudaraan sejati.
+      <strong>Aksi Kakak-Abang:</strong> Perlahan mendekat, duduk di samping adik-adiknya, letakkan tangan dan rangkul pundak mereka dengan kehangatan kasih persaudaraan sejati.
     </div>
 
-    <div class="speaker-label">WL: Membuka Sembahan dengan Kerinduan Jiwa</div>
+    <div class="speaker-label">WL: Doa Pembuka &amp; Membuka Kerinduan Jiwa Menuju Sembahan</div>
     <div class="speaker-text">
-      "Di tengah rasa lelah dan kekeringan yang mungkin kita rasakan, mari buka hati kita&hellip; Rasakan betapa jiwa kita merindukan jamahan dan pelukan Tuhan yang memulihkan. Mari bersama-sama kita menyembah Dia."
+      "Rasakan kehangatan di pundak kita&hellip; Tuhan tidak pernah membiarkan kita berjuang sendirian. Seperti tanah kering menantikan air hujan, seperti rusa haus merindukan aliran sungai yang sejuk, demikian jiwa kita haus akan jamahan dan hadirat-Mu, ya Tuhan. Buka hati kita lebar-lebar&hellip; mari bersama-sama kita sembah Dia: <em>Seperti Rusa yang Rindu Sungai-Mu&hellip;</em>"
     </div>
 
     <div class="song-card">

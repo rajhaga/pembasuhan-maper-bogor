@@ -485,36 +485,59 @@ HTML_PAGE = """<!DOCTYPE html>
   <!-- Rundown Container -->
   <div class="container" id="rundown-container">
 
-    <!-- SESI 1: 00:00 - 03:30 (PEMBUKAAN & PERSIAPAN DIRI) -->
+    <!-- SESI 1: 00:00 - 06:00 (PEMBUKAAN, KEHENINGAN & MENYIAPKAN HATI) -->
     <div class="section-card active-session" id="session-1">
       <div class="section-header">
         <div>
-          <span class="time-badge">00:00 - 03:30 (3.5 Menit Hening &amp; Santai)</span>
-          <div class="session-title">Sesi 1: Pengantar WL &amp; Menyiapkan Hati</div>
+          <span class="time-badge">00:00 - 06:00 (6 Menit Hening &amp; Refleksi Mendalam)</span>
+          <div class="session-title">Sesi 1: Pengantar WL, Hening &amp; Menyiapkan Hati Masuk Hadirat Tuhan</div>
         </div>
         <span class="session-type-badge type-speech">🎙️ Pengantar WL</span>
       </div>
 
       <div class="box cue-box">
-        <div class="cue-title">💡 Petunjuk Operator, Lighting &amp; Fasilitator</div>
-        • <strong>Suasana:</strong> Santai, tenang, dan redup. Base Song Ambient mengalun lembut.<br>
-        • <strong>Aksi:</strong> Peserta duduk rileks, gadget disimpan, semua hening/diam. Kakak-abang mendekat dan merangkul pundak adik-adiknya dengan hangat.
+        <div class="cue-title">💡 Petunjuk Operator, Lighting &amp; Fasilitator (Kakak-Abang)</div>
+        • <strong>Suasana &amp; Tata Lampu:</strong> Ruangan diredupkan secara bertahap (warm amber / candle light). Layar menampilkan visual hening / salib lembut. Base Song Ambient (D=Do) mengalun sangat lembut dan menenangkan (volume 20-30%).<br>
+        • <strong>Aksi Peserta:</strong> Peserta diarahkan duduk tegak tapi rileks, gadget dimatikan/disimpan, mata terpejam perlahan, menarik napas dalam, melepaskan segala beban pikiran.<br>
+        • <strong>Aksi Kakak-Abang:</strong> Secara perlahan dan tenang, kakak-abang mendekat, duduk di samping adik-adiknya, lalu meletakkan tangan dan merangkul pundak mereka dengan kehangatan kasih persaudaraan sejati.<br>
+        • <strong>Transisi:</strong> Berikan ruang keheningan total beberapa saat (10-15 detik) di sela-sela kata WL agar suasana hadirat Tuhan benar-benar meresap ke hati setiap peserta.
       </div>
 
       <div class="box speech-box">
-        <div class="speech-title">🎙️ Kata-Kata yang Dikeluarkan WL (Lebih Santai &amp; Singkat)</div>
-        <div class="speech-text">"Syalom PERMATA! Gimana makannya hari ini? Enak ya?
-Yuk, sekarang kita ambil posisi duduk yang paling santai dan paling nyaman... Letakkan tas di samping, dan simpan dulu handphone atau gadget kita masing-masing.
+        <div class="speech-title">🎙️ Naskah &amp; Kata-Kata Panduan WL (Lengkap, Mendalam &amp; Mengalir Hangat)</div>
+        <div class="speech-text">"Syalom teman-teman, adik-adik, dan seluruh rekan-rekan PERMATA yang dikasihi Tuhan...
+Bagaimana kabarnya hari ini? Gimana makannya tadi? Enak dan mengenyangkan ya? Puji Tuhan...
 
-Mari sejenak kita semua diam... Tarik napas panjang, tenangkan pikiran dari segala keramaian dan kesibukan di luar sana. Di sini, kita tidak perlu berpura-pura tegar atau memakai topeng. Biarkan hati kita benar-benar hening di hadapan Tuhan.
+Yuk, sekarang kita bersama-sama mengambil posisi duduk yang paling santai, paling nyaman, dan paling rileks...
+Kalau ada tas, jaket, atau barang bawaan, boleh diletakkan di samping atau di bawah kursi masing-masing. Dan untuk sejenak saja, mari kita simpan handphone atau gadget kita... kita silent dulu, kita taruh di dalam tas. Biarkan dunia luar menunggu sejenak. Malam ini adalah waktu khusus yang Tuhan sediakan antara kita, keluarga PERMATA kita, dan Tuhan Yesus.
 
-[KAKAK-ABANG MERANGKUL PUNDAK ADIK-ADIKNYA]
+Mari bersama-sama kita pejamkan mata perlahan...
+Tarik napas panjang dari hidung... tahan sejenak... dan hembuskan perlahan melalui mulut...
+(Biarkan hening sejenak 7-10 detik diiringi denting piano lembut...)
 
-Di tengah rasa lelah dan kekeringan yang mungkin kita rasakan, mari buka hati kita... Rasakan betapa jiwa kita merindukan jamahan dan pelukan Tuhan yang memulihkan. Mari bersama-sama kita menyembah Dia."</div>
+Tenangkan detak jantung kita... tenangkan pikiran kita dari segala keramaian, suara bising, dan kesibukan yang selama ini menyita hari-hari kita.
+Mungkin beberapa hari ini, atau beberapa bulan ke belakang, kepala dan hati kita terasa begitu penuh.
+Begitu banyak tugas kuliah, tuntutan sekolah, urusan pekerjaan, persoalan keluarga, ekspektasi dari orang-orang sekitar, atau kebingungan tentang masa depan yang membuat kita merasa lelah... lelah fisik, dan terlebih lagi lelah batin kita.
+
+Di tempat ini, di hadapan Tuhan malam ini, kita tidak perlu lagi berpura-pura kuat.
+Kita tidak perlu lagi memakai topeng bahwa 'aku baik-baik saja' jika sebenarnya hati kita sedang letih, rapuh, dan terluka.
+Di hadirat Tuhan, kita boleh menjadi diri kita apa adanya. Tuhan mengenal setiap tetes air mata yang mungkin selama ini kita sembunyikan di balik bantal saat malam hari. Tuhan tahu setiap pergumulan berat yang tak sanggup kita ceritakan kepada siapa pun. Dan Tuhan tahu betapa jiwa kita haus akan ketenangan dan pelukan yang sejati.
+
+[KAKAK-ABANG FASILITATOR PERLAHAN MENDEKAT, DUDUK DI SAMPING ADIK-ADIK, DAN MERANGKUL PUNDAK MEREKA DENGAN HANGAT]
+
+Rasakan kehangatan tangan di pundak kita...
+Tuhan tidak pernah membiarkan kita berjuang sendirian. Di ruangan ini, kita dikelilingi oleh keluarga baru kita—kakak, abang, dan sahabat-sahabat PERMATA yang mengasihi kita, yang siap menopang, mendengarkan, mendoakan, dan berjalan bersama kita di dalam Kristus.
+
+Seperti tanah yang kering menantikan air hujan...
+Seperti rusa yang dahaga dan terengah-engah mencari aliran sungai yang sejuk... demikianlah jiwa kita merindukan jamahan dan hadirat-Mu, ya Tuhan.
+
+Buka hati kita lebar-lebar... Lepaskan segala beban dan kebekuan hati. Biarkan kasih karunia-Nya yang tak bersyarat membanjiri kita malam ini.
+Tuhan Yesus, ini kami anak-anak-Mu... Jamahlah hati kami, penuhilah ruangan ini dengan Roh Kudus-Mu. Kami siap menyembah dan masuk lebih dalam lagi ke dalam hadirat-Mu.
+Mari bersama-sama kita angkat suara dan hati kita menyanyikan: Seperti Rusa yang Rindu Sungai-Mu..."</div>
       </div>
 
       <button class="next-session-btn" onclick="scrollToSession(2)">
-        <span>Siap Bernyanyi &rarr; Lanjut ke Lagu 1</span>
+        <span>Mulai Menyembah &rarr; Masuk ke Lagu 1 (Seperti Rusa)</span>
       </button>
     </div>
 
