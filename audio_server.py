@@ -477,6 +477,7 @@ HTML_PAGE = """<!DOCTYPE html>
     <div class="filter-pill" onclick="setFilter('songs', this)">🎬 6 Video Lagu</div>
     <div class="filter-pill" onclick="setFilter('speeches', this)">🎙️ Naskah WL</div>
     <a href="/download-seating-pdf" class="filter-pill" style="background:#c2410c; color:#ffffff; border-color:#ea580c; text-decoration:none; font-weight:700;">🪑 Unduh Denah Duduk (PDF)</a>
+    <a href="/download-pptx" class="filter-pill" style="background:#b91c1c; color:#ffffff; border-color:#ef4444; text-decoration:none; font-weight:700;">📊 Unduh Presentasi (PPTX)</a>
     <a href="/download-guide" class="filter-pill" style="background:#1d4ed8; color:#ffffff; border-color:#3b82f6; text-decoration:none; font-weight:700;">📘 Unduh Panduan Pengurus (PDF 6 Hal)</a>
     <a href="/download-pdf" class="filter-pill" style="background:#047857; color:#ffffff; border-color:#10b981; text-decoration:none; font-weight:700;">🎵 Unduh Lirik Lagu (PDF 3 Hal)</a>
     <a href="/download-backup-verses" class="filter-pill" style="background:#6b21a8; color:#ffffff; border-color:#9333ea; text-decoration:none; font-weight:700;">📜 Backup Ayat (TXT)</a>
@@ -1306,6 +1307,13 @@ def download_seating_pdf():
     if not os.path.exists(seating_path):
         return "Seating PDF not found", 404
     return send_file(seating_path, as_attachment=True, download_name="Ploting_Tempat_Duduk_Pembasuhan_MAPER_Bogor.pdf", mimetype="application/pdf")
+
+@app.route('/download-pptx')
+def download_pptx():
+    pptx_path = os.path.join(AUDIO_DIR, "Presentasi_Pembasuhan_MAPER_PERMATA_Bogor.pptx")
+    if not os.path.exists(pptx_path):
+        return "PPTX file not found", 404
+    return send_file(pptx_path, as_attachment=True, download_name="Presentasi_Pembasuhan_MAPER_PERMATA_Bogor.pptx", mimetype="application/vnd.openxmlformats-officedocument.presentationml.presentation")
 
 if __name__ == '__main__':
     port = 8080
